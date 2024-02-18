@@ -18,5 +18,10 @@ namespace EntityLayer.Concrete
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Announcement> Announcements { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
+
+        internal void Remove<T>(T entity) where T : class
+        {
+            throw new NotImplementedException();
+        }
     }
 }
